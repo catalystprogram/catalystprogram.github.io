@@ -88,6 +88,28 @@ function App() {
 
   return (
     <div className="App">
+      {/* Landscape orientation blocker */}
+      <div className="landscape-blocker" style={{
+        display: 'none',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'var(--color-primary)',
+        zIndex: 10000,
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: 'white',
+        textAlign: 'center',
+        padding: '2rem'
+      }}>
+        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📱</div>
+        <h2 style={{ color: 'white', marginBottom: '0.5rem' }}>Please Rotate Your Device</h2>
+        <p style={{ opacity: 0.8 }}>This site is best viewed in portrait mode</p>
+      </div>
+
       <SideNav activeSection={activeSection} />
       <Navbar activeSection={activeSection} />
       <main>
@@ -121,6 +143,7 @@ function App() {
               pointerEvents: 'none',
               color: 'var(--color-primary)'
             }}
+            className="scroll-indicator"
           >
             <div style={{
               width: '40px',

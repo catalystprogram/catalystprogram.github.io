@@ -95,17 +95,19 @@ const ApplySection = () => {
                             href="mailto:catalyst.program.board@gmail.com"
                             whileHover={{ scale: 1.02 }}
                             style={{
-                                display: 'inline-block',
+                                display: 'block',
                                 backgroundColor: 'var(--color-primary)',
                                 color: 'white',
-                                padding: '14px 24px',
+                                padding: '14px 16px',
                                 borderRadius: 'var(--radius-md)',
                                 fontWeight: 600,
-                                fontSize: '0.95rem',
-                                textDecoration: 'none'
+                                fontSize: '0.85rem',
+                                textDecoration: 'none',
+                                textAlign: 'center',
+                                lineHeight: 1.4
                             }}
                         >
-                            📧 catalyst.program.board@gmail.com
+                            📧 catalyst.program.board<wbr />@gmail.com
                         </motion.a>
                     </motion.div>
                 </div>

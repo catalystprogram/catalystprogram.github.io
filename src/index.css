@@ -118,3 +118,155 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary);
 }
+
+/* ==================== */
+/* Mobile Responsive    */
+/* ==================== */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Hide right-side dot navigation on mobile */
+  .side-nav {
+    display: none !important;
+  }
+
+  /* Hero section mobile */
+  #hero {
+    padding: 60px 0 40px 0 !important;
+    min-height: auto !important;
+  }
+
+  /* Hero grid becomes single column */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .hero-content {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .hero-content p {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .hero-content form {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    gap: 0.75rem !important;
+  }
+
+  .hero-content form input {
+    width: 100% !important;
+  }
+
+  .hero-content form button {
+    width: 100% !important;
+  }
+
+  .hero-visual {
+    order: 2;
+    width: 280px !important;
+    height: 280px !important;
+    min-width: 280px !important;
+    min-height: 280px !important;
+    max-width: 280px !important;
+    max-height: 280px !important;
+    margin: 0.5rem auto 0 auto !important;
+  }
+
+  /* Word wrap for long emails - use word-wrap instead of word-break to avoid mid-word breaks */
+  a[href^="mailto:"] {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 0.75rem !important;
+  }
+
+  /* Hide scroll indicator on mobile - it overlaps content */
+  .scroll-indicator {
+    display: none !important;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 1.6rem !important;
+  }
+
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  section {
+    padding: 50px 0 !important;
+  }
+
+  .hero-visual {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    min-height: 180px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
+  }
+
+  /* Form inputs on mobile */
+  input,
+  button {
+    font-size: 16px !important;
+    /* Prevents iOS zoom */
+  }
+
+  /* Cards/sections padding */
+  .container>div {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Landscape orientation blocker for mobile */
+@media (max-width: 900px) and (orientation: landscape) {
+  .landscape-blocker {
+    display: flex !important;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
