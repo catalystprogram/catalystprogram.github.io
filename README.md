@@ -2,7 +2,7 @@
 
 ## Live Site
 
-[https://catalyst-projects-program.github.io/catalyst-web/](https://catalyst-projects-program.github.io/)
+[https://catalyst-projects-program.github.io/](https://catalyst-projects-program.github.io/)
 
 ## Tech Stack
 
