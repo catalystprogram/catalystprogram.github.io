@@ -17,13 +17,13 @@ const AboutUs = () => {
                     </h2>
                     <p style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', marginBottom: '3rem', lineHeight: 1.8 }}>
                         We are a collective of ambitious students from top universities dedicated to driving social impact.
-                        By bridging the gap between talent and non-profits, we accelerate change where it matters most.
+                        By bridging the gap between student talent and impactful non-profits, we give students valuable opportunities and enhance the capacity of organizations.
                     </p>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', textAlign: 'left' }}>
                         {[
-                            { title: "Mission", text: "To empower non-profits with pro-bono consulting services that solve critical operational challenges." },
-                            { title: "Vision", text: "A world where every social enterprise has access to the top-tier strategy they deserve." },
+                            { title: "Mission", text: "To give non-profits greater capacity to achieve their mission through student volunteers." },
+                            { title: "Vision", text: "A world where organizations have access to a expansive pool of volunteer talent." },
                             { title: "Values", text: "Impact-first, evidence-based, and collaborative growth." }
                         ].map((item, index) => (
                             <motion.div
