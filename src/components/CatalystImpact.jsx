@@ -118,7 +118,7 @@ function Globe({ phase }) {
     // Load Earth texture
     useMemo(() => {
         const loader = new THREE.TextureLoader();
-        loader.load('/BlueMarbleNG-TB_2048x1024_atlas_ocean_emphasis.jpg', (texture) => {
+        loader.load('/BlueMarbleNG-TB_2048x1024_ocean_darker_softedges.jpg', (texture) => {
             textureRef.current = texture;
             if (globeRef.current) {
                 globeRef.current.material.map = texture;
