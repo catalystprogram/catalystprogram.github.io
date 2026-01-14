@@ -53,9 +53,13 @@ const ApplySection = () => {
                         <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6 }}>
                             Join a community of changemakers. Apply to be a consultant and gain real-world experience.
                         </p>
-                        <motion.div
+                        <motion.a
+                            href="https://forms.gle/db9Qrv3sCVh4kPwdA"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             animate={{ opacity: [0.8, 1, 0.8] }}
                             transition={{ duration: 2, repeat: Infinity }}
+                            whileHover={{ scale: 1.05 }} 
                             style={{
                                 backgroundColor: 'rgba(255,255,255,0.15)',
                                 color: 'white',
@@ -64,11 +68,13 @@ const ApplySection = () => {
                                 borderRadius: 'var(--radius-md)',
                                 fontWeight: 600,
                                 fontSize: '1rem',
-                                display: 'inline-block'
+                                display: 'inline-block',
+                                textDecoration: 'none',
+                                cursor: 'pointer'
                             }}
                         >
-                            ✨ Applications Opening Soon
-                        </motion.div>
+                            Apply Now
+                        </motion.a>
                     </motion.div>
 
                     {/* Org Column */}
