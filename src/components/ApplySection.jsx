@@ -56,7 +56,7 @@ const ApplySection = () => {
                         <motion.a
                             href="https://forms.gle/db9Qrv3sCVh4kPwdA"
                             target="_blank"
-                            rel="noopener noreferrer"}
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }} 
                             style={{
                                 backgroundColor: 'white',
