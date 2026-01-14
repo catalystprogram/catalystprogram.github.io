@@ -56,21 +56,20 @@ const ApplySection = () => {
                         <motion.a
                             href="https://forms.gle/db9Qrv3sCVh4kPwdA"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            animate={{ opacity: [0.8, 1, 0.8] }}
-                            transition={{ duration: 2, repeat: Infinity }}
+                            rel="noopener noreferrer"}
                             whileHover={{ scale: 1.05 }} 
                             style={{
-                                backgroundColor: 'rgba(255,255,255,0.15)',
-                                color: 'white',
-                                border: '2px solid rgba(255,255,255,0.4)',
-                                padding: '12px 28px',
+                                backgroundColor: 'white',
+                                color: 'var(--color-primary)',
+                                border: '2px solid white',
+                                padding: '14px 32px',
                                 borderRadius: 'var(--radius-md)',
-                                fontWeight: 600,
-                                fontSize: '1rem',
+                                fontWeight: 700,
+                                fontSize: '1.1rem',
                                 display: 'inline-block',
                                 textDecoration: 'none',
-                                cursor: 'pointer'
+                                cursor: 'pointer',
+                                boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
                             }}
                         >
                             Apply Now
