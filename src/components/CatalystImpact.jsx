@@ -299,33 +299,8 @@ function SceneController({ phase, setPhase, convergeStartTime, setConvergeStartT
 }
 
 export default function CatalystImpact() {
-    const [phase, setPhase] = useState('idle'); // Start with idle drifting shapes
+    const [phase, setPhase] = useState('ripple'); 
     const [convergeStartTime, setConvergeStartTime] = useState(null);
-
-    // Handle click to trigger convergence
-    const handleClick = useCallback(() => {
-        if (phase === 'idle') {
-            setPhase('converging');
-        }
-    }, [phase]);
-
-    // Handle scroll to trigger convergence
-    useEffect(() => {
-        let hasTriggered = false;
-
-        const handleScroll = () => {
-            if (hasTriggered || phase !== 'idle') return;
-
-            // Trigger immediately on any scroll
-            setPhase('converging');
-            hasTriggered = true;
-        };
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [phase]);
 
     return (
         <div
@@ -333,12 +308,10 @@ export default function CatalystImpact() {
                 width: '100%',
                 height: '100%',
                 background: 'transparent',
-                cursor: phase === 'idle' ? 'pointer' : 'default',
+                cursor: 'default',
                 position: 'relative',
                 overflow: 'hidden'
             }}
-            onClick={handleClick}
-            title={phase === 'idle' ? 'Click to trigger impact animation' : ''}
         >
             <Canvas
                 camera={{ position: [0, 0, 6], fov: 50 }}
