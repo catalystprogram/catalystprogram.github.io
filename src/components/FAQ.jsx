@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const FAQ = () => {
     const faqs = [
         { q: "Who can apply to Catalyst?", a: "We accept undergraduate students from our partner universities (Berkeley, Purdue, UChicago) from all majors." },
-        { q: "What is the time commitment?", a: "Expect roughly 5-10 hours per week, including team meetings, client calls, and independent work." },
+        { q: "What is the time commitment?", a: "Expect roughly anywhere from 5-15 hours per week (depending on project), including team meetings, client calls, and independent work." },
         { q: "Do I need consulting experience?", a: "No! We look for problem-solving ability and passion for impact. We provide training for all new consultants." },
         { q: "How do organizations partner with you?", a: "Organizations can submit an inquiry through our 'Partner' application below. We select projects based on impact potential and scope." },
     ];
