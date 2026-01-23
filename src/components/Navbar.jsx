@@ -150,8 +150,8 @@ const Navbar = ({ activeSection }) => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <img
-                            src="/full logo.png"
-                            srcSet="/full logo.png 1x, /full logo@2x.png 2x"
+                            src="/full logo sideways.png"
+                            srcSet="/full logo sideways.png 1x, /full logo sideways@2x.png 2x"
                             alt="Catalyst Program"
                             style={{
                                 height: `${logoHeight}px`,
