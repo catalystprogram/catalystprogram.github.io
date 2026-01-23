@@ -77,7 +77,7 @@ const Navbar = ({ activeSection }) => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <img
-                            src="/logo.png"
+                            src="/full logo.png"
                             alt="Catalyst Program"
                             style={{ height: isMobile ? '120px' : '160px', width: 'auto' }}
                         />
