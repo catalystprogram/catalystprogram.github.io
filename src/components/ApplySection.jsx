@@ -51,7 +51,7 @@ const ApplySection = () => {
                     >
                         <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'white' }}>For Students</h3>
                         <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6 }}>
-                            Join a community of changemakers. Apply to be a consultant and gain real-world experience.
+                            Apply to be a participant and gain real-world experience.
                         </p>
                         <motion.a
                             href="https://forms.gle/db9Qrv3sCVh4kPwdA"
@@ -91,7 +91,7 @@ const ApplySection = () => {
                     >
                         <h3 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: 'var(--color-primary)' }}>For Organizations</h3>
                         <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
-                            Need strategic support? Partner with us to solve your toughest challenges.
+                            In need of volunteer support? Get in touch to explore a partnership.
                         </p>
                         <p style={{ fontSize: '0.95rem', marginBottom: '1.5rem', color: 'var(--color-text-muted)' }}>
                             Please contact us at:
