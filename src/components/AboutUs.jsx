@@ -13,11 +13,11 @@ const AboutUs = () => {
                     style={{ textAlign: 'center' }}
                 >
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: 'var(--color-primary)' }}>
-                        About Catalyst Program
+                        About the Catalyst Program
                     </h2>
                     <p style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', marginBottom: '3rem', lineHeight: 1.8 }}>
                         We are a collective of ambitious students from top universities dedicated to driving social impact.
-                        By bridging the gap between student talent and impactful non-profits, we give students valuable opportunities and enhance the capacity of organizations.
+                        By bridging the gap between student talent and impactful non-profits, we give students valuable opportunities and enhance the capacity of impactful organizations.
                     </p>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', textAlign: 'left' }}>
