@@ -13,7 +13,7 @@ const Footer = () => {
             }}>
                 <div style={{ textAlign: 'center', flex: '1 1 auto', minWidth: '200px' }}>
                     <div style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem' }}>Catalyst Program</div>
-                    <p style={{ color: 'rgba(255,255,255,0.7)' }}>Empowering students aimed at high impact.</p>
+                    <p style={{ color: 'rgba(255,255,255,0.7)' }}>Empowering students to create impact.</p>
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flex: '1 1 auto' }}>
                     <a href="https://www.linkedin.com/company/catalyst-projects-program/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>LinkedIn</a>
