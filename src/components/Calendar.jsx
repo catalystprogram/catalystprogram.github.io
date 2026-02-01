@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 
 const Calendar = () => {
     return (
-        <section id="calendar" style={{ padding: '100px 0', backgroundColor: 'var(--color-surface)' }}>
-            <div className="container">
+        <section id="calendar" style={{ padding: '80px 0', backgroundColor: 'var(--color-surface)', position: 'relative', overflow: 'hidden' }}>
+            <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-20%" }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--color-primary)' }}>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--color-primary)', letterSpacing: '-0.01em' }}>
                         Calendar Overview
                     </h2>
                     <motion.div
@@ -19,7 +19,7 @@ const Calendar = () => {
                         transition={{ duration: 0.3 }}
                         style={{
                             backgroundColor: 'white',
-                            minHeight: '400px',
+                            minHeight: '380px',
                             borderRadius: 'var(--radius-lg)',
                             display: 'flex',
                             flexDirection: 'column',
@@ -27,7 +27,8 @@ const Calendar = () => {
                             alignItems: 'center',
                             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
                             position: 'relative',
-                            overflow: 'hidden'
+                            overflow: 'hidden',
+                            padding: '2rem'
                         }}
                     >
                         {/* Decorative calendar grid pattern */}
@@ -81,7 +82,7 @@ const Calendar = () => {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 overflow: 'hidden',
-                                marginBottom: '1.5rem'
+                                marginBottom: '1.25rem'
                             }}
                         >
                             <div style={{
@@ -99,27 +100,28 @@ const Calendar = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center'
                             }}>
-                                <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem', fontWeight: 700 }}>Projects</span>
+                                <span style={{ color: 'var(--color-primary)', fontSize: '1.25rem', fontWeight: 700 }}>Projects</span>
                             </div>
                         </motion.div>
 
                         {/* Main text */}
                         <h3 style={{
                             color: 'var(--color-primary)',
-                            fontSize: '1.8rem',
+                            fontSize: '1.6rem',
                             fontWeight: 600,
-                            marginBottom: '0.75rem',
+                            marginBottom: '0.5rem',
                             textAlign: 'center',
                             position: 'relative',
-                            zIndex: 1
+                            zIndex: 1,
+                            letterSpacing: '-0.01em'
                         }}>
                             Important Dates
                         </h3>
                         <p style={{
                             color: 'var(--color-text-muted)',
-                            fontSize: '1.1rem',
+                            fontSize: '1.05rem',
                             textAlign: 'center',
-                            maxWidth: '650px',
+                            maxWidth: '720px',
                             position: 'relative',
                             zIndex: 1,
                             marginBottom: '0.5rem'
@@ -128,39 +130,40 @@ const Calendar = () => {
                         </p>
                         <p style={{
                             color: 'var(--color-text-muted)',
-                            fontSize: '1.1rem',
+                            fontSize: '1.05rem',
                             textAlign: 'center',
-                            maxWidth: '650px',
+                            maxWidth: '720px',
                             position: 'relative',
                             zIndex: 1
                         }}>
-                            Projects will run for <strong>10 weeks</strong>, starting <strong>February 8, 2026</strong> and concluding on <strong>April 18, 2026</strong>.
+                            Projects run for <strong>10 weeks</strong>, beginning <strong>February 8, 2026</strong> and concluding on <strong>April 18, 2026</strong>.
                         </p>
 
                         <div style={{
-                            marginTop: '1.25rem',
+                            marginTop: '1rem',
                             display: 'flex',
-                            gap: '0.5rem',
+                            gap: '0.75rem',
                             position: 'relative',
                             zIndex: 1
                         }}>
                             <a href="#" style={{
-                                padding: '0.6rem 1rem',
-                                borderRadius: '8px',
+                                padding: '0.65rem 1.05rem',
+                                borderRadius: '10px',
                                 backgroundColor: 'var(--color-primary)',
                                 color: 'white',
-                                fontWeight: 600,
-                                textDecoration: 'none'
+                                fontWeight: 700,
+                                textDecoration: 'none',
+                                boxShadow: '0 6px 12px rgba(36, 86, 255, 0.12)'
                             }}>Open Project Form</a>
-                            <a href="#calendar-details" style={{
-                                padding: '0.6rem 1rem',
-                                borderRadius: '8px',
+                            <a href="#" style={{
+                                padding: '0.65rem 1.05rem',
+                                borderRadius: '10px',
                                 backgroundColor: 'transparent',
-                                border: '1px solid var(--color-primary)',
+                                border: '1px solid rgba(0,0,0,0.06)',
                                 color: 'var(--color-primary)',
-                                fontWeight: 600,
+                                fontWeight: 700,
                                 textDecoration: 'none'
-                            }}>See Full Timeline</a>
+                            }}>Learn More</a>
                         </div>
                     </motion.div>
                 </motion.div>
