@@ -99,7 +99,7 @@ const Calendar = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center'
                             }}>
-                                <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem', fontWeight: 700 }}>SP</span>
+                                <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem', fontWeight: 700 }}>Projects</span>
                             </div>
                         </motion.div>
 
@@ -113,18 +113,55 @@ const Calendar = () => {
                             position: 'relative',
                             zIndex: 1
                         }}>
-                            Schedule To Be Announced
+                            Important Dates
                         </h3>
                         <p style={{
                             color: 'var(--color-text-muted)',
                             fontSize: '1.1rem',
                             textAlign: 'center',
-                            maxWidth: '450px',
+                            maxWidth: '650px',
+                            position: 'relative',
+                            zIndex: 1,
+                            marginBottom: '0.5rem'
+                        }}>
+                            Please complete the project selection form by <strong>February 6, 2026</strong>.
+                        </p>
+                        <p style={{
+                            color: 'var(--color-text-muted)',
+                            fontSize: '1.1rem',
+                            textAlign: 'center',
+                            maxWidth: '650px',
                             position: 'relative',
                             zIndex: 1
                         }}>
-                            Program timeline and key dates for the Spring 2026 cohort will be shared soon.
+                            Projects will run for <strong>10 weeks</strong>, starting <strong>February 8, 2026</strong> and concluding on <strong>April 18, 2026</strong>.
                         </p>
+
+                        <div style={{
+                            marginTop: '1.25rem',
+                            display: 'flex',
+                            gap: '0.5rem',
+                            position: 'relative',
+                            zIndex: 1
+                        }}>
+                            <a href="#" style={{
+                                padding: '0.6rem 1rem',
+                                borderRadius: '8px',
+                                backgroundColor: 'var(--color-primary)',
+                                color: 'white',
+                                fontWeight: 600,
+                                textDecoration: 'none'
+                            }}>Open Project Form</a>
+                            <a href="#calendar-details" style={{
+                                padding: '0.6rem 1rem',
+                                borderRadius: '8px',
+                                backgroundColor: 'transparent',
+                                border: '1px solid var(--color-primary)',
+                                color: 'var(--color-primary)',
+                                fontWeight: 600,
+                                textDecoration: 'none'
+                            }}>See Full Timeline</a>
+                        </div>
                     </motion.div>
                 </motion.div>
             </div>
