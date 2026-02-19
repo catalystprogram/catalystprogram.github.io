@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div>
             <h1>Catalyst Program</h1>
-            <p>A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.</p>
+            <p>A student-led projects program involving students from universities across the United States, including Berkeley, Purdue, and UChicago.</p>
         </div>
     );
 };

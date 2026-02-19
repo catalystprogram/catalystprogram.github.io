@@ -108,7 +108,7 @@ const Hero = () => {
                             lineHeight: 1.6
                         }}
                     >
-                        A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.
+                        A student-led projects program involving students from universities across the United States, including Berkeley, Purdue, and UChicago.
                     </motion.p>
 
                     <motion.form
