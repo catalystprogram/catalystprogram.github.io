@@ -1,15 +1,6 @@
-import React from 'react';
+// ... other lines of code ...
 
-const Hero = () => {
-    return (
-        <div>
-            {/* Other elements */}
-            <p>
-                A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.
-            </p>
-            {/* Other elements */}
-        </div>
-    );
-};
+// Line 111 Update
+const heroText = "A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.";
 
-export default Hero;
+// ... other lines of code ...
