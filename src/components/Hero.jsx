@@ -1,6 +1,13 @@
-// ... other lines of code ...
+import React from 'react';
+import './Hero.css';
 
-// Line 111 Update
-const heroText = "A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.";
+const Hero = () => {
+    return (
+        <div className="hero">
+            <h1>Welcome to Catalyst Program</h1>
+            <p>A student-led projects program involving students from universities accross the United States, including Berkeley, Purdue, and UChicago.</p>
+        </div>
+    );
+};
 
-// ... other lines of code ...
+export default Hero;
